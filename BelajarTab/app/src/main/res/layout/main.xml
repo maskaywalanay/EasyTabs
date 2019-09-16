@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+	
+	<TabHost
+		android:id="@+id/host"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+			
+			<TabWidget
+				android:id="@android:id/tabs"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="#ff00ff00"/>
+			
+				<FrameLayout
+					android:id="@android:id/tabcontent"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+					
+					<LinearLayout
+						android:id="@+id/tab1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#ff000000"
+						android:gravity="center">
+						
+						<include layout="@layout/tab_1"/>
+							
+					</LinearLayout>
+					
+					<LinearLayout
+						android:id="@+id/tab2"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#ff00ff00"
+						android:gravity="center">
+						
+						<include layout="@layout/tab_2"/>
+						
+					</LinearLayout>
+					
+					<LinearLayout
+						android:id="@+id/tab3"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:background="#ffff00ff"
+						android:gravity="center">
+						
+						<include layout="@layout/tab_3"/>
+						
+					</LinearLayout>
+				</FrameLayout>
+			
+			
+		</LinearLayout>
+		
+	</TabHost>
+
+</LinearLayout>
+
